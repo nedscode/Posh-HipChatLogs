@@ -32,7 +32,7 @@ Searches all files named history.json under Directory for the text "find this te
 Searches FileName for line 3627 and extracts 900 context lines (default: 1000) before and after. It then prints the results to the console in the legacy text format.
 
 ##### Extract the JSON with another system then parse it for display
-`Format-HipChatLogAsChat -FileName "C:\archive\users\1111\history.json" -Highlight '*find this text*'` -Extract
+`Format-HipChatLogAsChat -FileName "C:\archive\users\1111\history.json" -Highlight '*find this text*' -Extract`
 
 Reads FileName for the text "find this text" with wildcard matching. Displays the chat log as a table with messages containing "find this text" marked in the Hit column. The Extract switch excludes PrivateMessage conversations that do not include the search terms.
 
